@@ -1,4 +1,4 @@
-package org.java.shop;
+package org.java.products;
 
 import java.util.Random;
 
