@@ -67,11 +67,12 @@ public class Prodotto {
 	}
 	
 	public double getVatPrice() {
-		return getPrice() * (1 + getVat()/100);
+		double vat = getPrice() * getVat()/100;
+		return getPrice() + vat;
 	}
 	
 	protected String productString() {
-		return "Codice Prodotto: " + getCode() + ", Nome: " + getName() + ", Marca: " + getBrand() + "\nPrezzo: " +  getPrice() + ", iva: " + getVat() + "% \nPrezzo ivato" + getVatPrice();
+		return "Codice Prodotto: " + getCode() + ", Nome: " + getName() + ", Marca: " + getBrand() + "\nPrezzo: " +  getPrice() + "€, iva: " + getVat() + "% \nPrezzo ivato: " + getVatPrice() + "€\n";
 	}
 	
 	@Override

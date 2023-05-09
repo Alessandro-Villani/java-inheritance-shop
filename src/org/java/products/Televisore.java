@@ -30,7 +30,7 @@ public class Televisore extends Prodotto {
 	@Override
 	public String toString() {
 		String isSmart = this.isSmart() ? "Si" : "No"; 
-		return "[TELEVISORE]" + super.productString() + ", Pollici: " + getDimension() + ", Smart: " + isSmart;
+		return "[TELEVISORE]" + super.productString() + "Pollici: " + getDimension() + ", Smart: " + isSmart;
 	}
 
 }

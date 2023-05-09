@@ -32,7 +32,7 @@ public class Cuffia extends Prodotto {
 	@Override
 	public String toString() {
 		String isWireless = this.isWireless() ? "Si" : "No"; 
-		return "[CUFFIA]" + super.productString() + ", Colore: " + getColor() + ", Wireless: " + isWireless;
+		return "[CUFFIA]" + super.productString() + "Colore: " + getColor() + ", Wireless: " + isWireless;
 	}
 
 }

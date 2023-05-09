@@ -31,7 +31,7 @@ public class Smartphone extends Prodotto {
 	
 	@Override
 	public String toString() {
-		return "[SMARTPHONE] " + super.toString() + "Imei: " + getImei() + ", Memoria: " + getMemory();
+		return "[SMARTPHONE] " + super.productString() + "Imei: " + getImei() + ", Memoria: " + getMemory();
 	}
 
 }
