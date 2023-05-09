@@ -84,13 +84,15 @@ public class Catalogo {
 			
 		}
 		
-		System.out.println("\n------------------------\n");
-		System.out.println("       CATALOGO         ");
-		System.out.println("\n------------------------\n");
-		for (int i = 0; i<catalogue.length; i++) {
-			if(catalogue[i] != null) {
-				System.out.println(catalogue[i]);
-				System.out.println("\n------------------------\n");
+		if (index > 0) {
+			System.out.println("\n------------------------\n");
+			System.out.println("       CATALOGO         ");
+			System.out.println("\n------------------------\n");
+			for (int i = 0; i<catalogue.length; i++) {
+				if(catalogue[i] != null) {
+					System.out.println(catalogue[i]);
+					System.out.println("\n------------------------\n");
+				}
 			}
 		}
 

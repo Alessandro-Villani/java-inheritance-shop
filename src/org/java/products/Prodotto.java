@@ -13,7 +13,7 @@ public class Prodotto {
 	
 	public Prodotto(String name, String brand, double price, int vat) {
 		Random rnd = new Random();
-		code = rnd.nextInt();
+		code = rnd.nextInt(1, 1000000);
 		setName(name);
 		setBrand(brand);
 		setPrice(price);
