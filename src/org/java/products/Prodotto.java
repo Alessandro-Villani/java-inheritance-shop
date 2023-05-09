@@ -7,11 +7,11 @@ public class Prodotto {
 	private int code;
 	private String name;
 	private String brand;
-	private float price;
+	private double price;
 	private int vat;
 	
 	
-	public Prodotto(String name, String brand, float price, int vat) {
+	public Prodotto(String name, String brand, double price, int vat) {
 		Random rnd = new Random();
 		code = rnd.nextInt();
 		setName(name);
@@ -42,12 +42,12 @@ public class Prodotto {
 	}
 
 
-	public float getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
 
-	public void setPrice(float price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
@@ -66,7 +66,7 @@ public class Prodotto {
 		return code;
 	}
 	
-	public float getVatPrice() {
+	public double getVatPrice() {
 		return getPrice() * (1 + getVat()/100);
 	}
 	
